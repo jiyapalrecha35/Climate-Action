@@ -1,0 +1,131 @@
+/* Ghar.css */
+
+/* Container for the entire component */
+.ghar-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Container for the content with background */
+.contentt-container {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 40px;
+  line-height: 1.8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadein 1s ease-in-out;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header section */
+.headers{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  animation: slidein 1s ease-in-out;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Video container */
+.video-container {
+  margin-bottom: 20px;
+  animation: fadein 1s ease-in-out;
+}
+
+/* Goal introductionduction section */
+.goal-introduction-container {
+  margin-bottom: 20px;
+  animation: fadein 1s ease-in-out;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.introduction {
+  animation: slideup 1s ease-in-out;
+}
+
+.introduction h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.introduction p {
+  margin-bottom: 10px;
+}
+
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Targets section */
+.targets-container {
+  margin-top: 20px;
+  animation: fadein 1s ease-in-out;
+}
+
+.target-box {
+  animation: slideup 1s ease-in-out;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.target-box p {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}

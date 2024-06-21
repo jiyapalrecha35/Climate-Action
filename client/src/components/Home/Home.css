@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.home-container {
+    position: relative;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bcg.png'); /* Replace 'background_image_url' with your image path */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 9px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 20%;
+    width: 60px;
+}
+
+.login-btn {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #333333;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.white-container {
+    background-color: rgb(222, 242, 224);
+    padding: 8px;
+    border-radius: 15px;
+    width: 70%;
+    margin: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.4, 0.4);
+}
+
+.white-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1.5em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    letter-spacing: 0.3em;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.content {
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0.05em;
+}
+
+.boxes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.box {
+    width: 290px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    height: 320px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.box h3 {
+    margin-top: 0;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    margin: 0;
+    padding: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.box p {
+    margin-bottom: 0;
+}
+
+.box:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+/* Home.css */
+
+/* Style for the user icon */
+.navbar .user-icon {
+    margin-left: 20px;
+    /* margin-top: 15px; */
+    /* padding-top:10px; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.user-icon:hover {
+    transform: scale(1.1); /* Scale up slightly on hover */
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+
+
+.login-btn,
+.sdg-info-btn,
+.conway-btn {
+    background-color: rgb(113, 165, 113);
+    padding: 12px 24px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-btn:hover,
+.sdg-info-btn:hover,
+.conway-btn:hover {
+    background-color: #008000;
+    transform: scale(1.05);
+}
+
+.sdg-info-btn {
+    background-color: black;
+    color: #fff;
+}
+.seg-btn{
+    background-color: black;
+    color: #fff;
+}
+.seg-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.sdg-info-btn:hover {
+    background-color: #0056b3;
+}
+
+.conway-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.conway-btn:hover {
+    background-color: #45a049;
+}

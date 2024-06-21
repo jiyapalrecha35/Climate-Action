@@ -1,0 +1,205 @@
+/* Import the Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Apply Poppins font to the entire body
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+} */
+
+/* Main game container */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Poppins';
+}
+
+/* Control buttons */
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Grid container */
+.grid-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+.grid-labels {
+    display: flex;
+}
+
+.grid-row {
+    display: flex;
+}
+
+.label-cell,
+.empty-cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50px);
+    gap: 2px;
+    justify-content: center;
+    margin-top: 20px;
+    min-width: fit-content; /* Adjust as needed */
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: white;
+    transition: background-color 0.5s;
+    border: 1px solid black;
+}
+
+/* Cell states */
+.alive {
+    background-color: green;
+}
+
+.dead {
+    background-color: red;
+}
+
+.reproduce {
+    background-color: yellow;
+    color: black;
+}
+
+/* Outlier styling */
+.outlier {
+    background-color: lightgray; /* Adjust color as needed */
+    color: black;
+    font-style: bold;
+}
+
+/* Default color for cells not marked */
+.cell:not(.alive):not(.dead):not(.reproduce):not(.outlier) {
+    background-color: green;
+}
+
+/* Generation display */
+.generation {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Legend section */
+.legend {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.legend ul {
+    list-style: none;
+    padding: 0;
+}
+
+.legend li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.legend span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Bottom container */
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Countries section */
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.country {
+    margin: 8px 10px;
+    font-weight: 600;
+    /* margin-bottom: 100px; */
+}
+
+/* Explanation section */
+.explanation {
+    max-width: 900px;
+    text-align: justify;
+    font-size: 20px;
+    padding: 25px;
+    margin: 25px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
